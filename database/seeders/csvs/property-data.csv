@@ -1,0 +1,50 @@
+﻿"name","address","price","bedrooms","bathrooms","garages","frontage","image","special","featured"
+"The Noosa","Melville, W.A.",236900,"4","2","2","20","https://workhouseadvertising.com.au/test-data/images/10.jpg",1,0
+"The Bronte","Northbridge, W.A.",199900,"4","2","2","18","https://workhouseadvertising.com.au/test-data/images/6.jpg",1,0
+"The Burleigh","Northbridge, W.A.",219900,"4","2","2","17","https://workhouseadvertising.com.au/test-data/images/12.jpg",0,0
+"The Eastwood","Alexander Heights, W.A.",209900,"4","2","1","16","https://workhouseadvertising.com.au/test-data/images/10.jpg",0,1
+"The Denmark","Spearwood, W.A.",236900,"3","1","2","17","https://workhouseadvertising.com.au/test-data/images/10.jpg",1,0
+"The Botanica","Maylands, W.A.",212900,"4","2","2","7","https://workhouseadvertising.com.au/test-data/images/3.jpg",0,1
+"The Bottega","Mirrabooka, W.A.",240900,"4","2","2","7","https://workhouseadvertising.com.au/test-data/images/13.jpg",0,0
+"The Darlington","Nollamara, W.A.",239000,"4","2","2","16","https://workhouseadvertising.com.au/test-data/images/4.jpg",1,0
+"The Bells Beach","Duncraig, W.A.",199900,"4","2","1","12","https://workhouseadvertising.com.au/test-data/images/13.jpg",1,0
+"The Mila","Wanneroo, W.A.",236900,"4","2","2","16","https://workhouseadvertising.com.au/test-data/images/1.jpg",0,0
+"The Byron Bay","Alkimos, W.A.",219900,"4","2","1","16","https://workhouseadvertising.com.au/test-data/images/13.jpg",1,0
+"The Orchard","Bedford, W.A.",242900,"4","2","1","20","https://workhouseadvertising.com.au/test-data/images/7.jpg",0,1
+"The Avon","Spearwood, W.A.",220900,"4","2","2","15","https://workhouseadvertising.com.au/test-data/images/10.jpg",0,1
+"The Coogee","West Leederville, W.A.",219900,"4","2","1","8","https://workhouseadvertising.com.au/test-data/images/7.jpg",1,0
+"The Ashbrook","Parkwood, W.A.",247900,"3","1","2","16","https://workhouseadvertising.com.au/test-data/images/11.jpg",0,0
+"The Evendale","Morley, W.A.",219900,"4","2","2","12","https://workhouseadvertising.com.au/test-data/images/8.jpg",0,0
+"The Delano","Mindarie, W.A.",239900,"5","2","2","20","https://workhouseadvertising.com.au/test-data/images/11.jpg",0,1
+"The Wyndham","Lesmurdie, W.A.",226900,"3","1","2","6","https://workhouseadvertising.com.au/test-data/images/8.jpg",0,0
+"The Dakota","Melville, W.A.",256900,"4","2","1","13","https://workhouseadvertising.com.au/test-data/images/7.jpg",0,0
+"The Nelson","Lesmurdie, W.A.",260900,"4","2","2","17","https://workhouseadvertising.com.au/test-data/images/3.jpg",0,0
+"The Bondi","Duncraig, W.A.",209900,"3","1","2","15","https://workhouseadvertising.com.au/test-data/images/4.jpg",0,1
+"The St. Ali","Lesmurdie, W.A.",2385,"4","2","2","17","https://workhouseadvertising.com.au/test-data/images/10.jpg",0,0
+"The Euston","Parkwood, W.A.",229900,"4","2","2","18","https://workhouseadvertising.com.au/test-data/images/5.jpg",0,0
+"The Coral Bay","Banksia Grove, W.A.",219900,"4","2","1","15","https://workhouseadvertising.com.au/test-data/images/5.jpg",0,0
+"The Croydon","Mount Hawthorn, W.A.",199900,"4","2","1","16","https://workhouseadvertising.com.au/test-data/images/7.jpg",0,0
+"The Denham","Mindarie, W.A.",239900,"4","2","1","14","https://workhouseadvertising.com.au/test-data/images/3.jpg",0,0
+"The Nine","Banksia Grove, W.A.",238900,"4","2","2","20","https://workhouseadvertising.com.au/test-data/images/9.jpg",0,0
+"The Bellanger","Kalamunda, W.A.",209900,"4","2","2","8","https://workhouseadvertising.com.au/test-data/images/5.jpg",0,0
+"The Cervantes","Bedford, W.A.",229900,"4","2","1","12","https://workhouseadvertising.com.au/test-data/images/11.jpg",0,1
+"The Driftwood","Lesmurdie, W.A.",239900,"3","1","2","10","https://workhouseadvertising.com.au/test-data/images/5.jpg",0,0
+"The Dunsborough","Wanneroo, W.A.",250900,"4","2","1","8","https://workhouseadvertising.com.au/test-data/images/8.jpg",0,0
+"The Augusta","Mount Hawthorn, W.A.",199900,"3","1","2","13","https://workhouseadvertising.com.au/test-data/images/8.jpg",1,0
+"The Bridgewater","Duncraig, W.A.",209900,"4","2","1","7","https://workhouseadvertising.com.au/test-data/images/3.jpg",1,0
+"The Ginsberg","Fremantle, W.A.",226900,"4","2","1","20","https://workhouseadvertising.com.au/test-data/images/1.jpg",0,0
+"The Leighton","Melville, W.A.",229900,"3","1","2","10","https://workhouseadvertising.com.au/test-data/images/13.jpg",0,0
+"The Marley","Bedford, W.A.",214900,"5","2","2","14","https://workhouseadvertising.com.au/test-data/images/11.jpg",0,0
+"The Gilmore","Joondalup, W.A.",215900,"4","2","2","11","https://workhouseadvertising.com.au/test-data/images/13.jpg",0,1
+"The Exmouth","Duncraig, W.A.",234900,"4","2","2","9","https://workhouseadvertising.com.au/test-data/images/2.jpg",0,0
+"The Australind","Mirrabooka, W.A.",199900,"4","2","2","7","https://workhouseadvertising.com.au/test-data/images/7.jpg",0,0
+"The Soto","Mullaloo, W.A.",240900,"3","1","2","6","https://workhouseadvertising.com.au/test-data/images/13.jpg",0,0
+"The Eucla","Mount Hawthorn, W.A.",199900,"4","2","1","18","https://workhouseadvertising.com.au/test-data/images/3.jpg",0,0
+"The Airlie","Parkwood, W.A.",199900,"4","2","2","12","https://workhouseadvertising.com.au/test-data/images/11.jpg",0,0
+"The Cottesloe","Mullaloo, W.A.",229900,"5","2","2","16","https://workhouseadvertising.com.au/test-data/images/4.jpg",0,1
+"The Archipelago","Alexander Heights, W.A.",241900,"4","2","2","6","https://workhouseadvertising.com.au/test-data/images/4.jpg",0,0
+"The Casablanca","Banksia Grove, W.A.",235900,"4","2","2","20","https://workhouseadvertising.com.au/test-data/images/9.jpg",0,0
+"The Westhampton","Alkimos, W.A.",227900,"4","2","2","6","https://workhouseadvertising.com.au/test-data/images/12.jpg",0,0
+"The Ryden","Morley, W.A.",209900,"4","2","2","13","https://workhouseadvertising.com.au/test-data/images/11.jpg",0,0
+"The Lotus","Wanneroo, W.A.",230900,"4","2","2","7","https://workhouseadvertising.com.au/test-data/images/8.jpg",0,1
+"The Braydon","Alexander Heights, W.A.",199900,"4","2","2","17","https://workhouseadvertising.com.au/test-data/images/2.jpg",0,1
