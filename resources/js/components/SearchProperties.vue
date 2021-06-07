@@ -1,9 +1,9 @@
 <template>
-    <div class="container">
+    <div>
         <div class="hero is-info is-bold">
             <div class="hero-body">
-                <div class="container">
-                    <h1 class="title">Find your dream property</h1>
+                <h1 class="title has-text-centered">Find your dream property</h1>
+                <div class="container mt-6 pb-6">
                     <div class="box">
                         <form @submit.prevent="search">
                             <!-- Property name -->
@@ -53,14 +53,15 @@
 
                             <!-- Submit -->
                             <div class="field">
-                                <button type="submit" :class="{ button: true, 'is-info': true, 'is-loading': loading }">Search</button>
+                                <button type="submit" class="button is-info" :class="{ 'is-loading': loading }">Search</button>
+                                <button type="reset" class="button is-warning">Reset</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <list-properties :properties="sortFeatured" :loading="loading" :loaded="loaded" ></list-properties>
+        <list-properties id="list-properties" :properties="sortFeatured" :loading="loading" :loaded="loaded" ></list-properties>
     </div>
 </template>
 
@@ -100,7 +101,7 @@ export default {
     },
 
     methods: {
-      search() {
+        search() {
             this.loading = true;
             axios.get('api/properties', {
                 params: this.params
@@ -113,8 +114,15 @@ export default {
             }).finally(() => {
                 this.loading = false;
                 this.loaded = true;
+                this.scrollToResults();
             });
         },
+        scrollToResults() {
+            var el = document.getElementById('list-properties');
+            el.scrollIntoView({behavior: 'smooth'});
+        }
+
+
   }
 }
 </script>

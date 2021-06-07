@@ -2,7 +2,7 @@
     <div class="modal" v-bind:class="{ 'is-active': showModal }">
         <div class="modal-background" @click="closeModal"></div>
         <div class="modal-content" :style="{ 'max-width' : modalWidth}">
-            <p class="image is-3by2">
+            <p class="image">
                 <img :src="url" alt="" :width="modalWidth">
             </p>
         </div>
@@ -14,7 +14,7 @@
 export default {
     data() {
         return {
-            modalWidth: "900px"
+            modalWidth: "898px"
         }
     },
     props: ['url', 'showModal'],

@@ -1902,6 +1902,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -1949,7 +1951,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      modalWidth: "900px"
+      modalWidth: "898px"
     };
   },
   props: ['url', 'showModal'],
@@ -2112,6 +2114,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -2158,6 +2161,14 @@ __webpack_require__.r(__webpack_exports__);
       })["finally"](function () {
         _this.loading = false;
         _this.loaded = true;
+
+        _this.scrollToResults();
+      });
+    },
+    scrollToResults: function scrollToResults() {
+      var el = document.getElementById('list-properties');
+      el.scrollIntoView({
+        behavior: 'smooth'
       });
     }
   }
@@ -6714,7 +6725,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.special, .featured {\n    font-weight: bold;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.special, .featured {\n    font-weight: bold;\n}\n.table td {\n    vertical-align: middle;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38173,34 +38184,38 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "section" }, [
-    _c("header", { staticClass: "block" }, [
-      _c("h2", { staticClass: "title is-size-2" }, [_vm._v(_vm._s(_vm.title))])
-    ]),
-    _vm._v(" "),
-    _vm.properties.length
-      ? _c("div", [
-          _c("p", [_vm._v("⭐: Featured Property💲: On Special")]),
-          _vm._v(" "),
-          _c(
-            "table",
-            { staticClass: "table is-bordered is-hoverable table-container" },
-            [
-              _vm._m(0),
-              _vm._v(" "),
-              _c(
-                "tbody",
-                _vm._l(_vm.properties, function(property) {
-                  return _c("property-single", {
-                    key: property.id,
-                    attrs: { property: property }
-                  })
-                }),
-                1
-              )
-            ]
-          )
+    _c("div", { staticClass: "container" }, [
+      _c("header", { staticClass: "block" }, [
+        _c("h2", { staticClass: "title is-size-2 has-text-centered" }, [
+          _vm._v(_vm._s(_vm.title))
         ])
-      : _vm._e()
+      ]),
+      _vm._v(" "),
+      _vm.properties.length
+        ? _c("div", { staticClass: "box" }, [
+            _c("p", [_vm._v("⭐: Featured Property💲: On Special")]),
+            _vm._v(" "),
+            _c(
+              "table",
+              { staticClass: "table is-bordered is-hoverable table-container" },
+              [
+                _vm._m(0),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.properties, function(property) {
+                    return _c("property-single", {
+                      key: property.id,
+                      attrs: { property: property }
+                    })
+                  }),
+                  1
+                )
+              ]
+            )
+          ])
+        : _vm._e()
+    ])
   ])
 }
 var staticRenderFns = [
@@ -38271,7 +38286,7 @@ var render = function() {
           style: { "max-width": _vm.modalWidth }
         },
         [
-          _c("p", { staticClass: "image is-3by2" }, [
+          _c("p", { staticClass: "image" }, [
             _c("img", {
               attrs: { src: _vm.url, alt: "", width: _vm.modalWidth }
             })
@@ -38318,7 +38333,9 @@ var render = function() {
       _vm._v(" "),
       _c("td", [_vm._v(_vm._s(_vm.property.id))]),
       _vm._v(" "),
-      _c("td", [_vm._v(_vm._s(_vm.property.name))]),
+      _c("td", { class: { "has-text-primary": !_vm.property.featured } }, [
+        _vm._v(_vm._s(_vm.property.name))
+      ]),
       _vm._v(" "),
       _c("td", [_vm._v(_vm._s(_vm.property.address))]),
       _vm._v(" "),
@@ -38391,15 +38408,14 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "container" },
     [
       _c("div", { staticClass: "hero is-info is-bold" }, [
         _c("div", { staticClass: "hero-body" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("h1", { staticClass: "title" }, [
-              _vm._v("Find your dream property")
-            ]),
-            _vm._v(" "),
+          _c("h1", { staticClass: "title has-text-centered" }, [
+            _vm._v("Find your dream property")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "container mt-6 pb-6" }, [
             _c("div", { staticClass: "box" }, [
               _c(
                 "form",
@@ -38666,14 +38682,20 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        class: {
-                          button: true,
-                          "is-info": true,
-                          "is-loading": _vm.loading
-                        },
+                        staticClass: "button is-info",
+                        class: { "is-loading": _vm.loading },
                         attrs: { type: "submit" }
                       },
                       [_vm._v("Search")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "button is-warning",
+                        attrs: { type: "reset" }
+                      },
+                      [_vm._v("Reset")]
                     )
                   ])
                 ]
@@ -38685,6 +38707,7 @@ var render = function() {
       _vm._v(" "),
       _c("list-properties", {
         attrs: {
+          id: "list-properties",
           properties: _vm.sortFeatured,
           loading: _vm.loading,
           loaded: _vm.loaded
