@@ -7,10 +7,3 @@ This application demonstrates my ability to create an api with Laravel and a fro
 ## Additional features 
 * I wrote some tests in *tests/Feature/PropertyDataTest.php* which can be run with `php artisan test` in the root  directory. 
 * Clicking on an image preview opens into a full page modal 
-## Notes
-
-
-
-
-
-
