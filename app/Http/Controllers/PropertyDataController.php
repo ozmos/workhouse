@@ -54,22 +54,22 @@ class PropertyDataController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return string
      */
-    public function store(Request $request): string
-    {
-        $property = new PropertyData([
-            'name' => $request->get('name'),
-            'address' => $request->get('address'),
-            'price' => $request->get('price'),
-            'bedrooms' => $request->get('bedrooms'),
-            'bathrooms' => $request->get('bathrooms'),
-            'garages' => $request->get('garages'),
-            'frontage' => $request->get('frontage'),
-            'image' => $request->get('image'),
-            'special' => $request->get('special'),
-            'featured' => $request->get('featured'),
-        ]);
-        $property->save();
-        return response()->json('Property Created!');
-    }
+    // public function store(Request $request): string
+    // {
+    //     $property = new PropertyData([
+    //         'name' => $request->get('name'),
+    //         'address' => $request->get('address'),
+    //         'price' => $request->get('price'),
+    //         'bedrooms' => $request->get('bedrooms'),
+    //         'bathrooms' => $request->get('bathrooms'),
+    //         'garages' => $request->get('garages'),
+    //         'frontage' => $request->get('frontage'),
+    //         'image' => $request->get('image'),
+    //         'special' => $request->get('special'),
+    //         'featured' => $request->get('featured'),
+    //     ]);
+    //     $property->save();
+    //     return response()->json('Property Created!');
+    // }
 
 }
