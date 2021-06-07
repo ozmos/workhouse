@@ -11,21 +11,27 @@
         <td>{{ property.garages }}</td>
         <td>{{ property.frontage }}</td>
         <td>
-            <a :href="property.image" target="_blank">
+            <a @click="openModal = true">
                 <img :src="property.image" width="128px" height="85.5px">
             </a>
         </td>
+        <modal :showModal="openModal" @close="openModal = false" :url="property.image"></modal>
     </tr>
 </template>
 
 <script>
+
+import Modal from './Modal.vue';
+
 export default {
+    components: { Modal },
     data() {
         return {
             classObject: {
                 'is-selected featured': this.property.featured,
                 special: this.property.special
-            }
+            },
+            openModal: false
         }
     },
     props: {
@@ -48,7 +54,7 @@ export default {
                 return "💲";
             }
         },
-    }
+    },
 }
 </script>
 
