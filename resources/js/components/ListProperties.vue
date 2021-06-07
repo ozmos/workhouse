@@ -4,9 +4,9 @@
             <header class="block">
                 <h2 class="title is-size-2 has-text-centered">{{ title }}</h2>
             </header>
-            <div v-if="properties.length" class="box">
+            <div v-if="properties.length" class="box table-container">
                 <p>⭐: Featured Property💲: On Special</p>
-                <table class="table is-bordered is-hoverable table-container">
+                <table class="table is-bordered is-hoverable">
                     <thead>
                         <tr>
                             <th></th>

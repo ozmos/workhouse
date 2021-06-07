@@ -3,7 +3,7 @@
     <tr  v-bind:class="classObject" :title="title">
         <td>{{ emoji }}</td>
         <td>{{ property.id }}</td>
-        <td :class="{ 'has-text-primary' : !property.featured}">{{ property.name }}</td>
+        <td :class="{ 'has-text-info' : !property.featured}">{{ property.name }}</td>
         <td>{{ property.address }}</td>
         <td>{{ property.price }}</td>
         <td>{{ property.bedrooms }}</td>

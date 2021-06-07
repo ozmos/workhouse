@@ -32,6 +32,9 @@ class PropertyDataController extends Controller
                 if($request->garages !=null){
                     $query->where('garages', '=', $request->garages);
                 }
+                if($request->frontage !=null){
+                    $query->where('frontage', '=', $request->frontage);
+                }
                 if($request->priceMin !=null && $request->priceMax !=null){
                     $query->whereBetween('price', [$request->priceMin, $request->priceMax]);
                 }

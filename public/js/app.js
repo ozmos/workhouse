@@ -2115,6 +2115,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -2129,7 +2135,8 @@ __webpack_require__.r(__webpack_exports__);
         priceMax: null,
         bedrooms: null,
         bathrooms: null,
-        garages: null
+        garages: null,
+        frontage: null
       }
     };
   },
@@ -38192,27 +38199,23 @@ var render = function() {
       ]),
       _vm._v(" "),
       _vm.properties.length
-        ? _c("div", { staticClass: "box" }, [
+        ? _c("div", { staticClass: "box table-container" }, [
             _c("p", [_vm._v("⭐: Featured Property💲: On Special")]),
             _vm._v(" "),
-            _c(
-              "table",
-              { staticClass: "table is-bordered is-hoverable table-container" },
-              [
-                _vm._m(0),
-                _vm._v(" "),
-                _c(
-                  "tbody",
-                  _vm._l(_vm.properties, function(property) {
-                    return _c("property-single", {
-                      key: property.id,
-                      attrs: { property: property }
-                    })
-                  }),
-                  1
-                )
-              ]
-            )
+            _c("table", { staticClass: "table is-bordered is-hoverable" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.properties, function(property) {
+                  return _c("property-single", {
+                    key: property.id,
+                    attrs: { property: property }
+                  })
+                }),
+                1
+              )
+            ])
           ])
         : _vm._e()
     ])
@@ -38333,7 +38336,7 @@ var render = function() {
       _vm._v(" "),
       _c("td", [_vm._v(_vm._s(_vm.property.id))]),
       _vm._v(" "),
-      _c("td", { class: { "has-text-primary": !_vm.property.featured } }, [
+      _c("td", { class: { "has-text-info": !_vm.property.featured } }, [
         _vm._v(_vm._s(_vm.property.name))
       ]),
       _vm._v(" "),
@@ -38673,6 +38676,40 @@ var render = function() {
                             return
                           }
                           _vm.$set(_vm.params, "garages", $event.target.value)
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c(
+                      "label",
+                      { staticClass: "label", attrs: { for: "frontage" } },
+                      [_vm._v("Frontage")]
+                    ),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.params.frontage,
+                          expression: "params.frontage"
+                        }
+                      ],
+                      staticClass: "input",
+                      attrs: {
+                        type: "number",
+                        name: "frontage",
+                        id: "frontage"
+                      },
+                      domProps: { value: _vm.params.frontage },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.params, "frontage", $event.target.value)
                         }
                       }
                     })

@@ -51,6 +51,12 @@
                                 <input type="number" name="garages" id="garages" class="input" v-model="params.garages">
                             </div>
 
+                            <!-- frontage -->
+                            <div class="field">
+                                <label for="frontage" class="label">Frontage</label>
+                                <input type="number" name="frontage" id="frontage" class="input" v-model="params.frontage">
+                            </div>
+
                             <!-- Submit -->
                             <div class="field">
                                 <button type="submit" class="button is-info" :class="{ 'is-loading': loading }">Search</button>
@@ -81,7 +87,8 @@ export default {
                 priceMax: null,
                 bedrooms: null,
                 bathrooms:null,
-                garages: null
+                garages: null,
+                frontage: null
             },
         }
     },
